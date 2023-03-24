@@ -1,0 +1,45 @@
+body {
+    background-color: #171717!important;
+}
+.titleSet {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0;
+    color: #ff0000;
+    text-transform: uppercase;
+    display: inline;
+}
+.hTitleSet {
+    margin: 10px 0 0 0;
+    padding: 0;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.gridStats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+img {
+    width: 100%;
+    border-radius: 8px;
+    animation: swing-in-top-fwd 0.5s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+
+@keyframes swing-in-top-fwd {
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+  
